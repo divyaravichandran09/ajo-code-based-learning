@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AJO Code Based Experience – Learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>AJO / AEP Code-Based Experience Playground</h1>
+    <p>Click actions to generate experience events</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Product: Credit Card Platinum</h2>
+      <p>Annual Fee: ₹999</p>
+      <button onclick="trackEvent('productView')">View Product</button>
+      <button onclick="trackEvent('addToCart')">Add to Cart</button>
+    </section>
+
+    <section class="card">
+      <h2>User Actions</h2>
+      <button onclick="identifyUser()">Login / Identify User</button>
+    </section>
+
+    <section class="debug">
+      <h3>Event Debug Panel</h3>
+      <pre id="log"></pre>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
